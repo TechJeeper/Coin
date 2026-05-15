@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stab The Bag Coin — St. Jude's Fundraiser</title>
+  <meta name="description" content="Flip the debate. Support St. Jude's. $10 Stab / Don't Stab The Bag coin — all proceeds to PezLiz's St. Jude's stream." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow bg-glow--red" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--gold" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="header">
+    <a href="#coin" class="logo">
+      <span class="logo-stab">STAB</span>
+      <span class="logo-slash">/</span>
+      <span class="logo-dont">DON'T STAB</span>
+    </a>
+    <a href="#order" class="header-cta">Get Yours — $10</a>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-badge">Limited fundraiser coin</div>
+      <h1 class="hero-title">
+        <span class="hero-line">The Bag Debate</span>
+        <span class="hero-line hero-line--accent">Needs Your Verdict</span>
+      </h1>
+      <p class="hero-sub">
+        One coin. Two sides. Infinite drama. <br>Flip it, display it, settle the debate forever.
+      </p>
+
+      <div class="coin-stage" id="coin">
+        <div class="coin-visual">
+        <div class="coin-ring coin-ring--outer" aria-hidden="true"></div>
+        <div class="coin-ring coin-ring--inner" aria-hidden="true"></div>
+        <button type="button" class="coin" id="flip-coin" aria-label="Flip the Stab / Don't Stab coin">
+          <div class="coin-inner">
+            <div class="coin-face coin-face--front">
+              <img src="stab.png" alt="Stab The Bag" width="280" height="280" />
+            </div>
+            <div class="coin-face coin-face--back">
+              <img src="dontstab.png" alt="Don't Stab The Bag" width="280" height="280" />
+            </div>
+          </div>
+        </button>
+        </div>
+        <p class="coin-hint">Click to flip · Auto-spins until you decide</p>
+      </div>
+
+      <div class="hero-cta-row">
+        <a href="#order" class="btn btn--primary">Order Your Coin — $10</a>
+        <a href="#cause" class="btn btn--ghost">Why We're Doing This</a>
+      </div>
+    </section>
+
+    <section class="cause" id="cause">
+      <div class="cause-grid">
+        <div class="cause-copy">
+          <span class="section-tag">For The Kids</span>
+          <h2>Every Flip Funds The Fight</h2>
+          <p>
+            All proceeds after shipping go straight to <strong>PezLiz</strong> during their
+            <strong>St. Jude Children's Research Hospital</strong> fundraiser stream.
+            You're not just picking a side on the bag debate — you're helping kids and families when it matters most.
+          </p>
+        </div>
+        <div class="cause-logo-wrap">
+          <a
+            href="https://www.stjude.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="cause-logo-link"
+          >
+            <img src="stjudes.png" alt="St. Jude Children's Research Hospital" class="cause-logo" width="320" height="auto" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners">
+      <span class="section-tag">Stream Team</span>
+      <h2>Powered By</h2>
+      <div class="partner-row">
+        <a href="https://pezliz.com" target="_blank" rel="noopener noreferrer" class="partner-card">
+          <img src="pezliz.png" alt="PezLiz" width="200" height="200" />
+          <span>pezliz.com</span>
+        </a>
+        <a href="https://techjeeper.com" target="_blank" rel="noopener noreferrer" class="partner-card">
+          <img src="techjeeper.png" alt="TechJeeper" width="200" height="200" />
+          <span>techjeeper.com</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="order" id="order">
+      <div class="order-card">
+        <span class="section-tag section-tag--hot">Secure Checkout</span>
+        <img
+          src="picture.jpg"
+          alt="Stab The Bag and Don't Stab The Bag coins"
+          class="order-photo"
+          width="260"
+          height="173"
+        />
+        <h2>Claim Your Coin</h2>
+        <p class="order-desc">
+          A two-sided UV printed coin, printed on repurposed ceramic poker chips — flip it, display it, and wear your side of the debate.
+        </p>
+        <p class="order-note">
+          $10 USD · Ships to you · Remaining funds donated to St. Jude's via PezLiz's fundraiser
+        </p>
+        <div id="paypal-container-DA2K6WB3UX4WN" class="paypal-wrap"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Stab The Bag / Don't Stab The Bag Coin · Fundraiser for St. Jude's</p>
+    <p class="footer-small">Not affiliated with St. Jude — donations made through PezLiz's official fundraiser stream.</p>
+  </footer>
+
+  <script src="https://www.paypal.com/sdk/js?client-id=BAAvF4o7llBzQa3Ho4wCqnN5g-cWCagR_4NFhWk4y2Zn3TxTCfrpNxob4TrfmWMZaXoOr-hRcjX1ZGFKrQ&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
+  <script>
+    paypal.HostedButtons({
+      hostedButtonId: "DA2K6WB3UX4WN",
+    })
+      .render("#paypal-container-DA2K6WB3UX4WN")
+      .then(function () {
+        var wrap = document.getElementById("paypal-container-DA2K6WB3UX4WN");
+        if (!wrap) return;
+        wrap.style.width = "100%";
+        wrap.querySelectorAll("div, form, iframe, a").forEach(function (el) {
+          el.style.width = "100%";
+          el.style.minWidth = "220px";
+          el.style.maxWidth = "420px";
+        });
+      });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
