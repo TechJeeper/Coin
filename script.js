@@ -13,7 +13,10 @@
     coin.classList.remove("is-paused");
     coin.classList.add("is-flipping");
 
-    const extra = 1440 + Math.floor(Math.random() * 360);
+    const isHeads = Math.random() < 0.5;
+    const targetFace = isHeads ? 0 : 180;
+    const spins = 4;
+    const extra = (spins * 360) + targetFace - (rotation % 360);
     const start = rotation % 360;
     rotation += extra;
 
