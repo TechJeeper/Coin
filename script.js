@@ -26,10 +26,16 @@
     const onEnd = () => {
       inner.removeEventListener("animationend", onEnd);
       coin.classList.remove("is-flipping");
-      inner.style.animation = "none";
+      inner.style.animationName = "none";
       inner.style.transform = "rotateY(" + (rotation % 360) + "deg)";
+
+      // The 4 represents the 4s duration of the coin-spin animation in CSS.
+      // If the CSS animation duration changes, this must be updated to match.
+      const delaySeconds = -((rotation % 360) / 360) * 4;
+      inner.style.animationDelay = delaySeconds + "s";
+
       void inner.offsetWidth;
-      inner.style.animation = "";
+      inner.style.animationName = "";
       flipping = false;
 
       setTimeout(() => {
