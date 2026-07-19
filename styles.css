@@ -359,10 +359,6 @@ main {
   margin-bottom: 0.75rem;
 }
 
-.section-tag--hot {
-  color: var(--stab);
-}
-
 .cause {
   padding: 3rem 0;
 }
@@ -520,11 +516,11 @@ main {
   transform: scale(1.05);
 }
 
-.order {
+.thanks {
   padding: 1rem 0 2rem;
 }
 
-.order-card {
+.thanks-card {
   text-align: center;
   background: linear-gradient(160deg, rgba(61, 255, 154, 0.06), var(--bg-card));
   border: 1px solid rgba(61, 255, 154, 0.2);
@@ -534,7 +530,7 @@ main {
   overflow: visible;
 }
 
-.order-photo {
+.thanks-photo {
   display: block;
   width: 100%;
   max-width: 260px;
@@ -549,14 +545,14 @@ main {
   -webkit-mask-image: radial-gradient(ellipse 98% 98% at center, #000 72%, transparent 100%);
 }
 
-.order-card h2 {
+.thanks-card h2 {
   font-family: var(--font-display);
   font-size: 2.75rem;
   letter-spacing: 0.04em;
   margin-bottom: 0.75rem;
 }
 
-.order-desc {
+.thanks-desc {
   color: var(--text);
   max-width: 32rem;
   margin: 0 auto 1rem;
@@ -564,31 +560,18 @@ main {
   line-height: 1.55;
 }
 
-.order-note {
+.thanks-note {
   color: var(--muted);
   margin-bottom: 1.5rem;
   font-size: 0.95rem;
 }
 
-.paypal-wrap {
-  width: 100%;
-  max-width: 420px;
-  min-height: 55px;
+.thanks-note strong {
+  color: var(--text);
+}
+
+.thanks-card .btn {
   margin: 0 auto;
-  display: block;
-}
-
-.paypal-wrap > div,
-.paypal-wrap form,
-.paypal-wrap iframe {
-  width: 100% !important;
-  max-width: 100% !important;
-  min-width: 200px !important;
-}
-
-.paypal-wrap * {
-  max-width: 100%;
-  white-space: normal;
 }
 
 .footer {

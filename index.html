@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stab The Bag Coin — St. Jude's Fundraiser</title>
-  <meta name="description" content="Flip the debate. Support St. Jude's. $10 Stab / Don't Stab The Bag coin — all proceeds to PezLiz's St. Jude's stream." />
+  <meta name="description" content="Flip the debate. Thank you for supporting St. Jude's with the Stab / Don't Stab The Bag coin fundraiser." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet" />
@@ -21,12 +21,12 @@
       <span class="logo-slash">/</span>
       <span class="logo-dont">DON'T STAB</span>
     </a>
-    <a href="#order" class="header-cta">Get Yours — $10</a>
+    <a href="#thanks" class="header-cta">Thank You</a>
   </header>
 
   <main>
     <section class="hero" id="top">
-      <div class="hero-badge">Limited fundraiser coin</div>
+      <div class="hero-badge">Campaign complete</div>
       <h1 class="hero-title">
         <span class="hero-line">The Bag Debate</span>
         <span class="hero-line hero-line--accent">Needs Your Verdict</span>
@@ -54,8 +54,8 @@
       </div>
 
       <div class="hero-cta-row">
-        <a href="#order" class="btn btn--primary">Order Your Coin — $10</a>
-        <a href="#cause" class="btn btn--ghost">Why We're Doing This</a>
+        <a href="#thanks" class="btn btn--primary">Thank You</a>
+        <a href="#cause" class="btn btn--ghost">Why We Did This</a>
       </div>
     </section>
 
@@ -65,9 +65,9 @@
           <span class="section-tag">For The Kids</span>
           <h2>Every Flip Funds The Fight</h2>
           <p>
-            All proceeds after shipping go straight to <strong>PezLiz</strong> during their
+            Proceeds after shipping went straight to <strong>PezLiz</strong> during their
             <strong>St. Jude Children's Research Hospital</strong> fundraiser stream.
-            You're not just picking a side on the bag debate — you're helping kids and families when it matters most.
+            You weren't just picking a side on the bag debate — you helped kids and families when it matters most.
           </p>
         </div>
         <div class="cause-logo-wrap">
@@ -105,24 +105,32 @@
       </div>
     </section>
 
-    <section class="order" id="order">
-      <div class="order-card">
-        <span class="section-tag section-tag--hot">Secure Checkout</span>
+    <section class="thanks" id="thanks">
+      <div class="thanks-card">
+        <span class="section-tag">Campaign Complete</span>
         <img
           src="picture.jpg"
           alt="Stab The Bag and Don't Stab The Bag coins"
-          class="order-photo"
+          class="thanks-photo"
           width="260"
           height="173"
         />
-        <h2>Claim Your Coin</h2>
-        <p class="order-desc">
-          A two-sided UV printed coin, printed on repurposed ceramic poker chips — flip it, display it, and wear your side of the debate.
+        <h2>Thank You</h2>
+        <p class="thanks-desc">
+          The Stab / Don't Stab The Bag coin campaign is over. Thank you to everyone who flipped a side,
+          ordered a coin, and helped raise funds for St. Jude's through PezLiz's stream.
         </p>
-        <p class="order-note">
-          $10 USD · Ships to you · Remaining funds donated to St. Jude's via PezLiz's fundraiser
+        <p class="thanks-note">
+          Keep following team <strong>MoCo Logo</strong> as they continue the fight.
         </p>
-        <div id="paypal-container-DA2K6WB3UX4WN" class="paypal-wrap"></div>
+        <a
+          href="https://app.tiltify.com/teams/ed8701f1-bbea-42ed-800b-e9bbca81c76c/campaigns/f28b220d-8024-4a53-a141-51cb2d1a1b2c/overview"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn--primary"
+        >
+          Track MoCo Logo's Progress
+        </a>
       </div>
     </section>
   </main>
@@ -132,23 +140,6 @@
     <p class="footer-small">Not affiliated with St. Jude — donations made through PezLiz's official fundraiser stream.</p>
   </footer>
 
-  <script src="https://www.paypal.com/sdk/js?client-id=BAAvF4o7llBzQa3Ho4wCqnN5g-cWCagR_4NFhWk4y2Zn3TxTCfrpNxob4TrfmWMZaXoOr-hRcjX1ZGFKrQ&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
-  <script>
-    paypal.HostedButtons({
-      hostedButtonId: "DA2K6WB3UX4WN",
-    })
-      .render("#paypal-container-DA2K6WB3UX4WN")
-      .then(function () {
-        var wrap = document.getElementById("paypal-container-DA2K6WB3UX4WN");
-        if (!wrap) return;
-        wrap.style.width = "100%";
-        wrap.querySelectorAll("div, form, iframe, a").forEach(function (el) {
-          el.style.width = "100%";
-          el.style.minWidth = "220px";
-          el.style.maxWidth = "420px";
-        });
-      });
-  </script>
   <script src="script.js"></script>
 </body>
 </html>
